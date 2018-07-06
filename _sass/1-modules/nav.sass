@@ -11,6 +11,23 @@ nav.nav-wrap
 	justify-content: space-between
 	margin: auto
 	padding: 40px
-	list-style: none
 	@media screen and (max-width: 600px)
-	padding: 35px 20px 
+		padding: 35px 20px 
+	a.nav-logo
+		height: 50px
+		svg
+			height: 100%
+			width: auto
+	ul.navigation
+		list-style: none
+		display: flex
+		flex-direction: row
+		justify-content: center
+		align-items: center
+		@media screen and (max-width: 600px)
+			display: none
+		li
+			display: block
+			padding-right: 30px
+		li:last-of-type
+			padding-right: 0
