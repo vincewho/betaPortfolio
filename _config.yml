@@ -24,7 +24,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 instagram_path: https://www.instagram.com/thisguyvince/
 github_path: https://github.com/vincewho
 
-path_to_blog_img: /assets/images/blog
+path_to_blog_img: ../assets/images/blog
 
 # Build settings
 markdown: kramdown
