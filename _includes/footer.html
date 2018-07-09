@@ -1,0 +1,19 @@
+
+<footer class="foot-wrapper">
+
+	<div id="newsletter" class="newsletter-slug">
+		<h2>Contact Me</h2>
+		<p>Stay Connected!</p>
+		<br>
+	</div>
+
+	{% include newsletter-form.html %}
+
+	<div class="social-links">
+		<a href="{{ site.$instagram_path }}" target="_blank" class="social-icon-wrap footer-insta-wrapper"></a>
+		<a href="{{ site.$github_path }}" target="_blank" class="social-icon-wrap footer-github-wrapper"></a>
+	</div>
+
+	<a href="mail-to: {{ site.email }}" class="footer-email">{{ site.email }}</a>
+
+</footer>

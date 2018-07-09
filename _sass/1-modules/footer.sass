@@ -1,0 +1,45 @@
+footer.foot-wrapper
+	width: 100%
+	padding: 100px 20px
+	display: flex
+	flex-direction: column
+	align-items: center
+	.newsletter-slug
+		margin: auto
+		max-width: 285px
+		text-align: center
+		h2
+			padding-bottom: 5px
+		p
+			line-height: 1.375em
+	.social-links
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		height: 50px
+		width: 100%
+		max-width: 250px
+		margin: 0 0 20px 0
+		.social-icon-wrap
+			transition: all 0.2s ease-in
+			display: inline-block
+			height: 50px
+			width: 50px
+			overflow: hidden
+			background:
+				size: contain
+				position: center center
+				repeat: no-repeat
+			&:hover
+				transform: scale(.95)
+		.footer-insta-wrapper
+			background-image: url(../images/icons/instagram-colored.png)
+		.footer-github-wrapper
+			background-image: url(../images/icons/Octocat.jpg)
+		.footer-email
+		transition: all 0.2s ease-in
+		font-family: $font-stack
+		font-size: 1em
+		color: $secondary_color
+		&:hover
+			color: $primary_color
