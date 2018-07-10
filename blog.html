@@ -1,13 +1,21 @@
 ---
 layout: default
 ---
-
-<header class="blog-index-header-main" style="background-image: url('{{ site.baseurl }}/assets/images/gate2.jpg')">
+{% for post in site.posts offset: 0 limit:1 %}
+<!-- limit 1 allows only one header -->
+<!-- offset 0 allows us to choose which is our featured post -->
+<header class="blog-index-header-main" style="background-image: url('{{ site.baseurl }}{{ site.path_to_blog_img }}{{ post.feature-image }}')">
 	<div class="overlay-dark"></div>
 	{% include nav.html %}
 	<div class="blog-index-title">
-		<h1 class="featured">Featured Blog Post</h1>
-		<a href="" class="read-featured">Read</a>
-
+		<h1 class="featured">{{ post.title }}</h1>
+		<a href="{{ post.url }}" class="read-featured">Read</a>
 	</div>
 </header>
+{% endfor %}
+
+<div class="blog-index-wrapper">
+	{% for post in site.posts %}
+	{% endfor %}
+</div>
+

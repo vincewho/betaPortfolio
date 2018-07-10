@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<header class="blog-index-header-main" style="background-image: url('{{ site.url }}{{ site.path_to_blog_img }}/gate2.jpg')">
+<header class="blog-index-header-main" style="background-image: url('{{ site.url }}{{ site.path_to_blog_img }}{{ page.feature-image }}')">
 	<div class="overlay-dark">
 		
 	</div>
@@ -17,8 +17,9 @@ layout: default
 		<img src="{{ site.url }}{{ site.data.authors[page.author].avatar }}" alt="{{ site.data.authors[page.author].name }} Avatar">
 		<small>
 			<em>by 
-				<a href="{{ site.data.authors[page.author].name }}">
-				</a><br>
+				<a href="">
+					{{ site.data.authors[page.author].name }}
+				</a>
 				on {{ page.date | date: "%B %e, %Y"}}
 			</em>
 		</small>

@@ -1,0 +1,75 @@
+.author-card
+	position: absolute
+	bottom: 0
+	left: 0
+	right: 0
+	display: flex
+	z-index: 5
+	flex-direction: column
+	align-items: center
+	margin-bottom: 30px
+	img
+		height: 70px
+		width: 70px
+		border-radius: 100%
+		margin: 10px
+		box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25)
+	small
+		text-transform: none
+		text-align: center
+		font-size: 0.8em
+		line-height: 1.5em
+		color: darken($white, 5%)
+		font-family: $font-stack-two
+		a
+			font-weight: 500
+			color: $white
+.blog-post-content-wrapper
+	width: 100%
+	max-width: 800px
+	margin: auto
+	padding: 100px 20px 0 20px
+	img
+		display: block
+		width: 100%
+		height: auto
+		margin: 2em auto
+		overflow: hidden
+		border-radius: 3px
+	p
+		font-family: $font-stack-two
+		font-weight: 300
+		color: $primary_color
+		line-height: 2em
+		padding: 2em 0
+	.dropcap::first-letter
+		font-size: 3.5em
+		font-weight: 400
+		font-family: $font-stack-one
+		color: $highlight_color
+	a
+		color: $highlight_color
+		font-weight: 600
+		cursor: pointer
+		&:hover
+			color: $secondary_color
+	a.lg-block-quote
+		font-family: $font-stack-one
+		font-size: 2em
+		font-weight: 200
+		color: $highlight_color
+		line-height: 1.5em
+		display: block
+		text-align: center
+		margin: 1em auto
+		max-width: 500px
+		transition: all 0.3s ease-in-out
+		&:hover
+			color: $secondary_color
+h5.read-more-cta
+	text-align: center
+	font-size: 1.2em
+	font-weight: 500
+	font-family: $font-stack-one
+	padding: 2em 0
+	margin-top: 60px
