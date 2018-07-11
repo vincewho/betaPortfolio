@@ -39,4 +39,14 @@ layout: default
 
 <div class="blog-read-more-wrapper">
 	
+	{% for post in site.posts limit: 3%}
+	<div class="blog-post-container">
+		<a href="{{ post.url }}" class="blog-post-featured-img" style="background-image: url('{{ site.baseurl }}{{ site.path_to_blog_img }}lowres/{{ post.feature-image }}')"></a>
+		<!-- <a href=""></a> -->
+		<a href="" class="blog-category">{{ post.categories }}</a>
+		<a href="{{ post.url }}" class="blog-title">{{ post.title }}</a>
+		<p class="blog-excerpt">{{ post.excerpt }}</p>
+	</div>
+	{% endfor %}
+	
 </div>
