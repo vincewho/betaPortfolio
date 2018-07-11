@@ -17,9 +17,9 @@ title: Vincent's Portfolio
 email: vrli1@asu.edu
 description: >- # this means to ignore newlines until "baseurl:"
   Write some witty description here. Have a good day!
-baseurl: "/betaPortfolio" # the subpath of your site, e.g. /blog
+# baseurl: "/betaPortfolio" # the subpath of your site, e.g. /blog
 # baseurl: ""
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://www.pressandclick.me" # the base hostname & protocol for your site, e.g. http://example.com
 
 instagram_path: https://www.instagram.com/thisguyvince/
 github_path: https://github.com/vincewho
