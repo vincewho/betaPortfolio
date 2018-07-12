@@ -77,27 +77,27 @@ header.header-main
 // Edu Section
 h2.education, .experience
 	text-align: center
-	padding-top: 100px
+	padding-top: 50px
 
-.edu-content-wrapper, .exp-content-wrapper
+.edu-content-wrapper
 	margin: auto
 	max-width: 800px
 	padding: 60px 20px 0px 20px
 	display: flex
 	flex-direction: column
 	align-items: center
-	.edu-wrap, .exp-wrap
+	.edu-wrap
 		width: 100%
 		display: flex
 		justify-content: flex-start
-		.edu, .exp
+		.edu
 			max-width: 465px
 			min-height: 100px
 			margin: 20px 0
 			display: flex
 			flex-direction: row
 			justify-content: space-around
-			.edu-img, .exp-img
+			.edu-img
 				background: $white
 				height: 100px
 				width: 100px
@@ -113,7 +113,18 @@ h2.education, .experience
 					image: url('../../assets/images/icons/ASU_LOGO.jpg')
 			.edu-img-two
 				background:
-					image: url('../../assets/images/icons/asu_sunburst_600ppi.png')
+					image: url('../../assets/images/icons/ASU_LOGO.jpg')
+			.edu-text
+				min-height: 83px
+				height: 100%
+				width: 100%
+				margin-left: 15px
+				display: flex
+				flex-direction: column
+				justify-content: space-around
+				padding: 5px 0
+				p
+					line-height: 1.1875em
 	.edu-wrap-reverse
 		justify-content: flex-end
 		.edu
@@ -122,9 +133,7 @@ h2.education, .experience
 				text-align: right
 				margin-right: 15px
 				margin-left: 0
-.exp-content-wrapper
-	margin: 0 auto 100px auto
-	@media screen and (max-width: 465px) 
+		@media screen and (max-width: 465px) 
 		.edu-wrap
 			.edu
 				flex-direction: column
@@ -138,14 +147,32 @@ h2.education, .experience
 				min-height: 189px
 				.edu-text
 					margin: 6px 0 0 0
-.edu-text, .exp-text
-	min-height: 83px
-	height: 100%
-	width: 100%
-	margin-left: 15px
+
+.exp-content-wrapper
+	margin: auto
+	max-width: 1200px
+	padding: 60px 20px 0px 20px
 	display: flex
 	flex-direction: column
-	justify-content: space-around
-	padding: 5px 0
-	p
-		line-height: 1.1875em
+	align-items: center
+
+.exp
+	background: $highlight_color
+	height: 60px
+	width: auto
+	display: flex
+	flex-direction: column
+	align-items: center
+	border-radius: 10px
+	justify-content: center
+	a.featured-resume
+		color: $white
+		&:hover
+			color: $primary_color
+.pdf-icon
+	z-index: 1000000
+	background-image:
+		image: url('../../assets/images/icons/pdf.png')
+	position: absolute
+	height: 15px
+	width: auto
